@@ -1,0 +1,20 @@
+{
+    "name": "rahpt/ci4-commands",
+    "description": "Command Extension for modules structure",
+    "type": "package",
+    "require": {
+        "codeigniter4/appstarter": "^4.5"
+    },
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Rahpt\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "José Proença",
+            "email": "github.rahpt@rah.pt"
+        }
+    ]
+}
