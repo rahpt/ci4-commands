@@ -3,7 +3,7 @@
     "description": "Command Extension for modules structure",
     "type": "package",
     "require": {
-        "codeigniter4/appstarter": "^4.5"
+        "mustache/mustache": "*"
     },
     "license": "proprietary",
     "autoload": {
