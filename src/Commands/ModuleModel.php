@@ -68,7 +68,7 @@ class ModuleModel extends BaseCommand {
 
     protected function generateModelContent($moduleName, $tableName, $modelName, $fieldData) {
         // Carregar o template do modelo
-        $templatePath = APPPATH . 'Commands/Templates/model.tpl';
+        $templatePath = __DIR__  . '/Templates/model.tpl';
         $template = file_get_contents($templatePath);
 
         $entityName = $this->removeSuffixIfNeeded($modelName, 'Model') . 'Entity';
@@ -98,7 +98,7 @@ class ModuleModel extends BaseCommand {
 
     protected function generateEntityContent($moduleName, $modelName, $entityName, $fields) {
         // Carregar o template da entidade
-        $templatePath = APPPATH . 'Commands/Templates/entity.tpl';
+        $templatePath = __DIR__ .  '/Templates/entity.tpl';
         $template = file_get_contents($templatePath);
 
         // Campos da tabela

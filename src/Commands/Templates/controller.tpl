@@ -40,7 +40,7 @@ class {{controllerName}} extends Controller
             $this->model->insert($data);
 
             // Redireciona para uma página de sucesso ou exibe uma mensagem
-            return redirect()->to({{moduleNameLower}}/{{controllerNameLower}});
+            return redirect()->to("{{moduleNameLower}}/{{controllerNameLower}}");
         } else {
             // Se o formulário não foi submetido, redirecione para uma página de erro
             return redirect()->to(site_url('error'));

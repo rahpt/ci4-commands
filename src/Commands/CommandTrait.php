@@ -44,7 +44,7 @@ trait CommandTrait {
             $this->showError('Module name is required.');
         }
 
-        return $moduleName;
+        return ucfirst($moduleName);
     }
 
     public function getControllerName(&$params, $default = '') {
@@ -61,7 +61,7 @@ trait CommandTrait {
             return CLI::error('You must provide a controller name.');
         }
 
-        return $controllerName;
+        return ucfirst($controllerName);
     }
 
     private function getModelName(&$params, $default) {
@@ -79,7 +79,7 @@ trait CommandTrait {
         if (empty($modelName)) {
             $this->showError('Model name is required.');
         }
-        return $modelName;
+        return ucfirst($modelName);
     }
 
     private function getTableName(&$params) {

@@ -52,7 +52,7 @@ class ModuleViews extends BaseCommand {
             return CLI::error('View file already exists: ' . $viewName . '.php');
         }
 
-        $templatePath = APPPATH . "Commands/Templates/views/$viewName.tpl";
+        $templatePath = __DIR__ .  "/Templates/views/$viewName.tpl";
         $template = file_get_contents($templatePath);
         $data = [
             'moduleNameLower' => strtolower($moduleName),
@@ -80,7 +80,7 @@ class ModuleViews extends BaseCommand {
             return CLI::error('View file already exists: ' . $viewName . '.php');
         }
 
-        $templatePath = APPPATH . "Commands/Templates/views/$viewName.tpl";
+        $templatePath = __DIR__ .  "/Templates/views/$viewName.tpl";
         $template = file_get_contents($templatePath);
         $data = [
             'moduleNameLower' => strtolower($moduleName),
@@ -108,7 +108,7 @@ class ModuleViews extends BaseCommand {
             return CLI::error('View file already exists: ' . $viewName . '.php');
         }
 
-        $templatePath = APPPATH . "Commands/Templates/views/$viewName.tpl";
+        $templatePath = __DIR__ .  "/Templates/views/$viewName.tpl";
         $template = file_get_contents($templatePath);
         $data = [
             'moduleNameLower' => strtolower($moduleName),
@@ -135,7 +135,7 @@ class ModuleViews extends BaseCommand {
             return CLI::error('View file already exists: ' . $viewName . '.php');
         }
 
-        $templatePath = APPPATH . "Commands/Templates/views/$viewName.tpl";
+        $templatePath = __DIR__ .  "/Templates/views/$viewName.tpl";
         $template = file_get_contents($templatePath);
         $data = [
             'moduleNameLower' => strtolower($moduleName),

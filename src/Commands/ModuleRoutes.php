@@ -43,7 +43,7 @@ class ModuleRoutes extends BaseCommand {
 
     public function generateRoutesContent($moduleName, $controllerName) {
         // Carregar o template do modelo
-        $templatePath = APPPATH . 'Commands/Templates/routes.tpl';
+        $templatePath = __DIR__ .  '/Templates/routes.tpl';
         if ($controllerName == $moduleName) {
             $groupRouter = strtolower($controllerName);
         } else {
