@@ -3,8 +3,7 @@
 namespace Rahpt\Commands;
 
 use CodeIgniter\CLI\BaseCommand;
-use CodeIgniter\CLI\CLI;
-use App\Commands\Classes\Convert;
+use Rahpt\Commands\Classes\Convert;
 
 class ModuleModel extends BaseCommand {
 
@@ -40,7 +39,7 @@ class ModuleModel extends BaseCommand {
         if (file_exists($entityFile)) {
             $this->showError("Entity '$entityName' already exists in module '$moduleName'.");
         }
-        if (!is_dir(dirNAme($entityFile))) {
+        if (!is_dir(dirname($entityFile))) {
             mkdir(dirname($entityFile), 777, true);
         }
         if (!write_file($entityFile, $entityContent)) {
